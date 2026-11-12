@@ -175,19 +175,19 @@ A hole shows the plate, so its $\Delta E$ to the plate drops far below that of t
    $\overline{\Delta E}(x) = \dfrac{G_\sigma * (\Delta E \cdot W)}{G_\sigma * W}$,
    with $\sigma$ = `local_ref_window` / 4 = 10 mm. It is computed twice; the second pass leaves out
    the candidates found in the first.
-2. Candidate pixels: $\Delta E < 0.5\,\overline{\Delta E}$ (`hole_bg_fraction`).
+2. Candidate pixels: $\Delta E \lt  0.5\,\overline{\Delta E}$ (`hole_bg_fraction`).
 3. Each connected component is checked:
    - It is rejected if it lies within 3 mm of the outline (that is a notch, handled in §7.3).
    - **Size:** a sub-pixel "plateness" $p = \text{clip}\big((\overline{\Delta E}-\Delta E)/(\overline{\Delta E}-\Delta E_{plate}),0,1\big)$
      is summed over the component dilated by 2 px. Area $A = \sum p\,/\,s^2$ and diameter
      $d = \sqrt{4A/\pi}$; this removes the bias of blurred edges.
    - Components with $d \ge 3.8$ mm (`pinhole_max_diameter`) must also reach
-     $\Delta E < \max(8,\ 1.5 \cdot P_{90}(\Delta E_{plate\ ring}))$, so a stain that only looks
+     $\Delta E \lt  \max(8,\ 1.5 \cdot P_{90}(\Delta E_{\mathrm{plate}}))$, so a stain that only looks
      *similar* to the plate is not counted. Pinholes are too small to reach the plate colour after
      camera blur, so only the relative test applies to them.
    - **Dark-particle test:** a component whose darkest pixel is more than 12 L units darker than
      both the plate and the surrounding glove is dirt, not a hole.
-4. $d < 3.8$ mm → *pinhole*, otherwise *hole*. Stored: diameter, area.
+4. $d \lt  3.8$ mm → *pinhole*, otherwise *hole*. Stored: diameter, area.
 
 ### 7.2 Stains and dirt
 
@@ -213,7 +213,7 @@ In the N-frame, the outermost mask column per row, $x_L(y)$ and $x_R(y)$, is tak
 8 mm below the palm top to 4 mm above the cuff end. For the left edge:
 
 ```math
-\text{dev}(y) = x_L(y) - \max\big(\operatorname{med} x_L[y-w : y-g],\ \operatorname{med} x_L[y+g : y+w]\big)
+\text{dev}(y) = x_L(y) - \max\big(\mathrm{med} x_L[y-w : y-g],\ \mathrm{med} x_L[y+g : y+w]\big)
 ```
 
 with $w$ = 25 mm and $g$ = 6 mm (mirrored for the right edge). A notch is inward relative to *both*
