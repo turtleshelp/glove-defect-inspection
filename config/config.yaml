@@ -1,0 +1,66 @@
+﻿# Glove inspection configuration. Units: mm unless stated.
+
+calibration:
+  board: {cols: 9, rows: 6, square_mm: 20.0}   # inner corners of the printed checkerboard
+  output_px_per_mm: 2.0                         # resolution of the rectified (top-down) image
+  fallback_px_per_mm: 2.0                       # used only if no checkerboard calibration is loaded
+
+segmentation:
+  learn_frames: 15          # empty-plate frames used to learn the background
+  min_contrast: 10.0        # lower bound of the adaptive (Otsu) threshold on the colour distance
+  l_weight: 0.5             # weight of lightness in the shadow-tolerant distance (chroma + w*|dL|)
+  min_glove_area_mm2: 8000
+  bg_update_rate: 0.02      # slow background adaptation on non-glove pixels (live camera drift)
+
+# Product specification per glove type (nominal values of the synthetic model; replace with real specs).
+glove_types:
+  exam:     {label: "Exam glove",      length: 237.2, width: 95.0}
+  longcuff: {label: "Long-cuff glove", length: 331.2, width: 100.0}
+  garden:   {label: "Garden glove",    length: 239.2, width: 118.0}
+tolerance: {length: 10.0, width: 6.0}
+
+defects:
+  edge_band: 2.0               # ignore this band along the glove outline for surface defects
+  hole_bg_fraction: 0.5        # pixel is "background showing through" below this fraction of the local glove contrast
+  hole_abs_min: 8.0            # ...and closer to the plate than max(this, factor x plate noise next to the glove)
+  hole_abs_factor: 1.5
+  min_hole_area_mm2: 1.0
+  pinhole_max_diameter: 3.8
+  stain_chroma: 12.0           # local chroma difference (LAB a/b)
+  stain_dl: 22.0               # or local darkening in L
+  stain_min_diameter: 5.0
+  dirt_dl: 20.0                # dirt = small and dark (darker than its surroundings by this much L)
+  dirt_max_diameter: 5.0
+  min_spot_area_mm2: 1.0
+  local_ref_window: 40.0       # size of the local colour reference (Gaussian sigma = window / 4)
+  tear_min_depth: 3.5
+  tear_window: 25.0
+  tear_gap: 6.0
+  cuff_min_dev: 3.5
+  finger_prominence: 12.0
+  short_finger_ratio: 0.75     # finger shorter than 75 % of the expected length -> missing/short finger
+  thumb_ratio: 0.75
+  fused_min_elevation: 12.0    # finger valley this much higher than normal -> fused/webbed fingers
+
+decision:                       # fuzzy quality score 0..100
+  pass_min: 65
+  rework_min: 35
+
+tracking:
+  max_jump_mm: 150
+  min_observations: 3
+  analyse_every: 3              # analyse a glove on every 3rd frame it is fully visible...
+  max_observations: 8           # ...up to 8 times, then vote
+  vote_fraction: 0.4            # a defect must be seen in >= 40 % of the analysed frames of a glove
+  defect_merge_mm: 12
+
+sorter:
+  baud: 9600
+  angles: {PASS: 30, REWORK: 90, REJECT: 150}
+
+models:
+  type_classifier: models/type_mlp.joblib
+  golden: models/golden.json
+
+logging:
+  dir: logs
