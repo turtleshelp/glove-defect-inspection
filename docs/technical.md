@@ -49,7 +49,9 @@ is the top-left one; this keeps the rectified image upright.
 
 The output image is defined by
 
-$$H = S \cdot H_b, \qquad S = \begin{pmatrix} s & 0 & -s\,x_{min} \\ 0 & s & -s\,y_{min} \\ 0 & 0 & 1 \end{pmatrix}$$
+```math
+H = S \cdot H_b, \qquad S = \begin{pmatrix} s & 0 & -s\,x_{min} \\ 0 & s & -s\,y_{min} \\ 0 & 0 & 1 \end{pmatrix}
+```
 
 with $s$ = `calibration.output_px_per_mm` (2 px/mm) and $(x_{min}, y_{min})$ the smallest board
 coordinate of the four image corners, so the whole camera view fits. Every frame is warped with $H$;
@@ -68,7 +70,9 @@ the empty plate, $B(x,y)$, is stored, together with its CIE-LAB version.
 **Illumination normalisation.** For each frame $F$ and each colour channel $c$, the ratio
 $r_c = F_c / B_c$ is modelled as a planar gain field
 
-$$g_c(x, y) = a_c + b_c\,\tilde x + c_c\,\tilde y, \qquad \tilde x, \tilde y \in [-0.5, 0.5]$$
+```math
+g_c(x, y) = a_c + b_c\,\tilde x + c_c\,\tilde y, \qquad \tilde x, \tilde y \in [-0.5, 0.5]
+```
 
 and fitted by least squares on a grid (every 8 px). The fit is made robust as follows:
 - the initial inliers are pixels within ±25 % of the median ratio
@@ -81,12 +85,16 @@ frame $F'_c = F_c / g_c$ has the plate's lighting. This cancels global brightnes
 **Distance to the plate.** With $\Delta L, \Delta a, \Delta b$ the LAB differences between
 $F'$ and $B$:
 
-$$D = \sqrt{\Delta a^2 + \Delta b^2} + w\,|\Delta L| \qquad (w = \texttt{l\_weight} = 0.5)$$
+```math
+D = \sqrt{\Delta a^2 + \Delta b^2} + w\,|\Delta L|
+```
+
+with $w$ = `l_weight` = 0.5.
 
 Chroma counts fully and lightness only half, so a soft shadow (mostly $\Delta L$) stays below the
 threshold while a coloured glove does not. The full CIE76 $\Delta E$ is also kept for the hole
 detector. $D$ is smoothed ($\sigma$ = 1 px), and the threshold is
-$\max(\text{Otsu}(D), \texttt{min\_contrast})$, computed on every frame. After a 3 × 3 opening and
+the larger of Otsu($D$) and `min_contrast`, computed on every frame. After a 3 × 3 opening and
 closing, external contours with area ≥ `min_glove_area_mm2` are gloves.
 
 Nothing in this step depends on the glove's colour. The only requirement is that glove and plate
@@ -187,7 +195,9 @@ Inside the glove minus a 2 mm edge band and minus the holes, local LAB reference
 $\bar L, \bar a, \bar b$ are computed by the same two-pass normalised convolution. A pixel is a
 candidate if
 
-$$\sqrt{(a-\bar a)^2 + (b-\bar b)^2} \ge 12 \quad\text{or}\quad L-\bar L \le -22 \quad\text{or}\quad L-\bar L \le -0.6\cdot 20$$
+```math
+\sqrt{(a-\bar a)^2 + (b-\bar b)^2} \ge 12 \quad\text{or}\quad L-\bar L \le -22 \quad\text{or}\quad L-\bar L \le -0.6\cdot 20
+```
 
 Components of at least `min_spot_area_mm2` are classified:
 - **dirt:** diameter ≤ 5 mm and darkest pixel ≥ 20 L below its surroundings
@@ -202,7 +212,9 @@ The local reference follows smooth shadows and the glove's own shading, which gl
 In the N-frame, the outermost mask column per row, $x_L(y)$ and $x_R(y)$, is taken for rows from
 8 mm below the palm top to 4 mm above the cuff end. For the left edge:
 
-$$\text{dev}(y) = x_L(y) - \max\big(\operatorname{med} x_L[y-w : y-g],\ \operatorname{med} x_L[y+g : y+w]\big)$$
+```math
+\text{dev}(y) = x_L(y) - \max\big(\operatorname{med} x_L[y-w : y-g],\ \operatorname{med} x_L[y+g : y+w]\big)
+```
 
 with $w$ = 25 mm and $g$ = 6 mm (mirrored for the right edge). A notch is inward relative to *both*
 neighbourhoods. A straight, slanted or convex outline, or a one-sided step such as the thumb base,
