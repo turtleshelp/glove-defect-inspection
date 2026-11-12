@@ -1,0 +1,68 @@
+{
+ "exam": {
+  "finger_len_ratio": [
+   0.7316,
+   0.8172,
+   0.7644,
+   0.6042
+  ],
+  "tip_s_ratio": [
+   -0.4344,
+   -0.1451,
+   0.158,
+   0.4418
+  ],
+  "thumb_asym": 0.3782,
+  "thumb_tip": [
+   -0.9047,
+   0.3737
+  ],
+  "valley_elev_mm": 0.0,
+  "palm_top_ratio": 0.3284,
+  "n": 104
+ },
+ "longcuff": {
+  "finger_len_ratio": [
+   0.715,
+   0.797,
+   0.7475,
+   0.5941
+  ],
+  "tip_s_ratio": [
+   -0.4284,
+   -0.1388,
+   0.1605,
+   0.4451
+  ],
+  "thumb_asym": 0.2239,
+  "thumb_tip": [
+   -0.8963,
+   0.3566
+  ],
+  "valley_elev_mm": 0.0,
+  "palm_top_ratio": 0.2413,
+  "n": 118
+ },
+ "garden": {
+  "finger_len_ratio": [
+   0.5362,
+   0.5907,
+   0.5574,
+   0.4449
+  ],
+  "tip_s_ratio": [
+   -0.4272,
+   -0.1506,
+   0.1423,
+   0.4252
+  ],
+  "thumb_asym": 0.2375,
+  "thumb_tip": [
+   -0.7782,
+   0.3814
+  ],
+  "valley_elev_mm": 0.0,
+  "palm_top_ratio": 0.2923,
+  "n": 112
+ }
+}

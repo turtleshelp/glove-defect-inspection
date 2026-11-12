@@ -1,0 +1,24 @@
+{
+ "n_train": 900,
+ "features": [
+  "length_mm",
+  "area_mm2",
+  "max_width_mm",
+  "aspect",
+  "solidity",
+  "extent",
+  "w50_mm",
+  "w65_mm",
+  "w80_mm",
+  "w95_mm",
+  "hu1",
+  "hu2",
+  "hu3"
+ ],
+ "train_accuracy": 1.0,
+ "golden_n": {
+  "exam": 104,
+  "longcuff": 118,
+  "garden": 112
+ }
+}
