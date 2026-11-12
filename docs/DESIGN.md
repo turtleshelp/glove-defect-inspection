@@ -38,7 +38,7 @@ frame ─► illumination normalisation ─► segmentation ─► glove contour
 
 **Segmentation is colour-agnostic:** the system learns the empty background at start-up and segments
 whatever differs from it, so glove colour is never used for identification and
-lighting drift is handled by normalisation + adaptive (Otsu) thresholds (req. 6).
+lighting drift is handled by normalisation + adaptive (Otsu) thresholds.
 
 **Per-glove decision, not per-frame:** a glove is tracked while it is in view; it is judged once when
 fully visible, using a vote over several frames, so totals count gloves, not frames.
