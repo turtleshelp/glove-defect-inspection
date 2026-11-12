@@ -1,0 +1,120 @@
+id,file,problems,gt_defects,detected_defects
+11,images/00011.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+14,images/00014.png,"hand L->?; missed missing_finger,cuff_defect; false missing_finger,missing_finger,fused_fingers,fused_fingers","cuff_defect,missing_finger","fused_fingers,fused_fingers,missing_finger,missing_finger,out_of_tolerance"
+28,images/00028.png,missed hole; false pinhole,"hole,out_of_tolerance","out_of_tolerance,pinhole"
+29,images/00029.png,false fused_fingers; decision REWORK->REJECT,stain,"fused_fingers,stain"
+36,images/00036.png,missed tear; decision REJECT->PASS,tear,
+42,images/00042.png,false pinhole; decision REWORK->REJECT,stain,"pinhole,stain"
+49,images/00049.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+59,images/00059.png,"missed stain; false pinhole,hole,dirt","fused_fingers,stain","dirt,fused_fingers,hole,pinhole"
+68,images/00068.png,false cuff_defect,"cuff_defect,dirt","cuff_defect,cuff_defect,dirt"
+74,images/00074.png,missed dirt,"dirt,missing_finger","dirt,dirt,missing_finger"
+80,images/00080.png,missed dirt,"dirt,missing_finger","dirt,dirt,missing_finger"
+82,images/00082.png,hand R->?; missed missing_finger; false missing_finger,missing_finger,missing_finger
+99,images/00099.png,missed tear; decision REJECT->PASS,tear,
+100,images/00100.png,missed missing_finger; false missing_finger,missing_finger,missing_finger
+132,images/00132.png,missed pinhole; false hole,"pinhole,tear","hole,tear"
+146,images/00146.png,missed dirt,dirt,dirt
+159,images/00159.png,hand R->?,missing_finger,missing_finger
+173,images/00173.png,false fused_fingers; decision REWORK->REJECT,dirt,"dirt,fused_fingers"
+181,images/00181.png,false cuff_defect,"cuff_defect,stain","cuff_defect,cuff_defect,stain"
+184,images/00184.png,"false pinhole,stain; decision REWORK->REJECT",stain,"pinhole,stain,stain"
+188,images/00188.png,false fused_fingers; decision PASS->REJECT,,fused_fingers
+194,images/00194.png,"hand R->L; missed hole; false missing_finger,missing_finger,missing_finger,fused_fingers,stain",hole,"fused_fingers,missing_finger,missing_finger,missing_finger,out_of_tolerance,stain"
+200,images/00200.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+207,images/00207.png,hand R->?,"cuff_defect,missing_finger","cuff_defect,missing_finger"
+209,images/00209.png,"false fused_fingers,fused_fingers,stain; decision PASS->REJECT",,"fused_fingers,fused_fingers,stain"
+222,images/00222.png,"hand L->R; false missing_finger,missing_finger,fused_fingers,tear,hole,hole,stain,stain; decision PASS->REJECT",,"fused_fingers,hole,hole,missing_finger,missing_finger,out_of_tolerance,stain,stain,tear"
+237,images/00237.png,"missed hole; false pinhole,stain",hole,"pinhole,stain"
+241,images/00241.png,hand L->?,missing_finger,missing_finger
+247,images/00247.png,hand L->?; missed missing_finger; false missing_finger,missing_finger,missing_finger
+251,images/00251.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+254,images/00254.png,"missed dirt,dirt","dirt,fused_fingers","dirt,fused_fingers"
+257,images/00257.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+261,images/00261.png,missed missing_finger; false missing_finger,missing_finger,missing_finger
+283,images/00283.png,missed dirt,"dirt,fused_fingers",fused_fingers
+284,images/00284.png,false pinhole; decision REWORK->REJECT,stain,"pinhole,stain"
+290,images/00290.png,hand L->?; missed missing_finger; false missing_finger,missing_finger,missing_finger
+293,images/00293.png,missed dirt; decision REWORK->PASS,dirt,
+297,images/00297.png,missed dirt,dirt,dirt
+299,images/00299.png,missed tear; decision REJECT->PASS,tear,
+304,images/00304.png,false dirt,"fused_fingers,tear","dirt,fused_fingers,tear"
+329,images/00329.png,"hand L->R; false missing_finger,missing_finger,fused_fingers",missing_finger,"fused_fingers,missing_finger,missing_finger,missing_finger,out_of_tolerance"
+341,images/00341.png,false cuff_defect,"cuff_defect,fused_fingers","cuff_defect,cuff_defect,fused_fingers"
+342,images/00342.png,missed stain; false hole; decision REWORK->REJECT,stain,hole
+362,images/00362.png,false fused_fingers,cuff_defect,"cuff_defect,fused_fingers"
+369,images/00369.png,missed dirt,dirt,dirt
+374,images/00374.png,"hand L->?; missed missing_finger,dirt; false missing_finger,missing_finger,fused_fingers,fused_fingers","dirt,missing_finger","fused_fingers,fused_fingers,missing_finger,missing_finger,out_of_tolerance"
+379,images/00379.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+389,images/00389.png,missed pinhole; false stain; decision REJECT->REWORK,pinhole,stain
+394,images/00394.png,false cuff_defect,"cuff_defect,out_of_tolerance","cuff_defect,cuff_defect,out_of_tolerance"
+395,images/00395.png,missed tear; decision REJECT->REWORK,"out_of_tolerance,tear",out_of_tolerance
+397,images/00397.png,missed dirt; false pinhole; decision REWORK->REJECT,dirt,"dirt,dirt,pinhole"
+404,images/00404.png,missed dirt,"dirt,stain","dirt,dirt,stain"
+406,images/00406.png,false pinhole; decision REWORK->REJECT,stain,"pinhole,stain"
+410,images/00410.png,"hand R->L; missed missing_finger; false missing_finger,missing_finger,fused_fingers,fused_fingers","missing_finger,out_of_tolerance","fused_fingers,fused_fingers,missing_finger,missing_finger,out_of_tolerance"
+414,images/00414.png,missed dirt,"dirt,stain","dirt,dirt,stain"
+417,images/00417.png,missed dirt,"cuff_defect,dirt","cuff_defect,dirt,dirt"
+419,images/00419.png,false pinhole,"missing_finger,stain","missing_finger,pinhole,stain"
+430,images/00430.png,"false pinhole,pinhole; decision REWORK->REJECT",stain,"pinhole,pinhole,stain"
+431,images/00431.png,hand R->?,missing_finger,missing_finger
+432,images/00432.png,false cuff_defect; decision PASS->REJECT,,cuff_defect
+434,images/00434.png,missed pinhole; decision REJECT->PASS,pinhole,
+444,images/00444.png,missed dirt,"dirt,pinhole",pinhole
+449,images/00449.png,"false tear,tear",hole,"hole,out_of_tolerance,tear,tear"
+460,images/00460.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+461,images/00461.png,"hand L->?; missed missing_finger; false missing_finger,missing_finger,fused_fingers,fused_fingers","missing_finger,stain","fused_fingers,fused_fingers,missing_finger,missing_finger,out_of_tolerance,stain"
+464,images/00464.png,false fused_fingers; decision PASS->REJECT,,fused_fingers
+486,images/00486.png,"missed stain; false hole,dirt; decision REWORK->REJECT",stain,"dirt,hole"
+497,images/00497.png,"hand L->R; missed missing_finger; false missing_finger,missing_finger,fused_fingers,fused_fingers",missing_finger,"fused_fingers,fused_fingers,missing_finger,missing_finger,out_of_tolerance"
+507,images/00507.png,"false tear,pinhole,stain",hole,"hole,pinhole,stain,tear"
+514,images/00514.png,false cuff_defect,"cuff_defect,pinhole","cuff_defect,cuff_defect,pinhole"
+523,images/00523.png,missed pinhole; decision REJECT->REWORK,"pinhole,stain",stain
+524,images/00524.png,missed pinhole; decision REJECT->PASS,pinhole,
+537,images/00537.png,missed pinhole; decision REJECT->PASS,pinhole,
+540,images/00540.png,missed dirt; false pinhole; decision REWORK->REJECT,dirt,"dirt,pinhole"
+547,images/00547.png,"missed dirt,dirt","cuff_defect,dirt","cuff_defect,dirt"
+552,images/00552.png,missed dirt; decision REWORK->PASS,dirt,
+553,images/00553.png,false pinhole; decision REWORK->REJECT,stain,"pinhole,stain"
+554,images/00554.png,false pinhole,hole,"hole,pinhole"
+564,images/00564.png,missed dirt,"dirt,tear","dirt,tear"
+590,images/00590.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+599,images/00599.png,false fused_fingers; decision PASS->REJECT,,fused_fingers
+602,images/00602.png,hand R->?; missed missing_finger; false missing_finger,"fused_fingers,missing_finger","fused_fingers,missing_finger"
+605,images/00605.png,missed dirt,"dirt,missing_finger","dirt,dirt,missing_finger"
+614,images/00614.png,false fused_fingers; decision PASS->REJECT,,fused_fingers
+627,images/00627.png,missed pinhole,"cuff_defect,pinhole",cuff_defect
+642,images/00642.png,false cuff_defect; decision PASS->REJECT,,cuff_defect
+643,images/00643.png,"type longcuff->garden; hand R->?; missed hole,dirt; false missing_finger,missing_finger,missing_finger,missing_finger,cuff_defect,cuff_defect","dirt,hole","cuff_defect,cuff_defect,missing_finger,missing_finger,missing_finger,missing_finger,out_of_tolerance"
+644,images/00644.png,missed tear; decision REJECT->PASS,tear,
+649,images/00649.png,missed missing_finger; false missing_finger,missing_finger,missing_finger
+668,images/00668.png,missed tear; decision REJECT->PASS,tear,
+699,images/00699.png,false pinhole; decision REWORK->REJECT,stain,"pinhole,stain"
+700,images/00700.png,false pinhole; decision REWORK->REJECT,"dirt,stain","dirt,dirt,pinhole,stain"
+702,images/00702.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+707,images/00707.png,hand R->?; missed missing_finger; false missing_finger,missing_finger,missing_finger
+709,images/00709.png,missed tear; decision REJECT->REWORK,"stain,tear",stain
+718,images/00718.png,missed dirt,dirt,dirt
+719,images/00719.png,missed pinhole,"hole,pinhole",hole
+728,images/00728.png,false cuff_defect,cuff_defect,"cuff_defect,cuff_defect"
+748,images/00748.png,false tear; decision REWORK->REJECT,stain,"stain,tear"
+763,images/00763.png,missed missing_finger; false missing_finger,missing_finger,missing_finger
+767,images/00767.png,false fused_fingers,pinhole,"fused_fingers,pinhole"
+769,images/00769.png,false cuff_defect,"cuff_defect,stain","cuff_defect,cuff_defect,stain"
+772,images/00772.png,missed tear,"fused_fingers,tear",fused_fingers
+778,images/00778.png,"missed dirt,dirt,dirt; decision REWORK->PASS",dirt,
+789,images/00789.png,hand R->?; missed missing_finger; false missing_finger,missing_finger,missing_finger
+792,images/00792.png,false fused_fingers; decision REWORK->REJECT,out_of_tolerance,"fused_fingers,out_of_tolerance"
+813,images/00813.png,false pinhole,"stain,tear","pinhole,stain,tear"
+815,images/00815.png,missed cuff_defect; decision REJECT->PASS,cuff_defect,
+820,images/00820.png,missed dirt,dirt,dirt
+821,images/00821.png,false fused_fingers,"out_of_tolerance,pinhole","fused_fingers,out_of_tolerance,pinhole"
+839,images/00839.png,missed dirt; decision REWORK->PASS,dirt,
+840,images/00840.png,false cuff_defect,"cuff_defect,tear","cuff_defect,cuff_defect,tear"
+844,images/00844.png,missed dirt,dirt,"dirt,dirt"
+862,images/00862.png,hand R->?,missing_finger,missing_finger
+866,images/00866.png,"hand R->?; missed missing_finger; false missing_finger,missing_finger,fused_fingers,fused_fingers",missing_finger,"fused_fingers,fused_fingers,missing_finger,missing_finger,out_of_tolerance"
+867,images/00867.png,missed pinhole; decision REJECT->PASS,pinhole,
+868,images/00868.png,false fused_fingers; decision PASS->REJECT,,fused_fingers
+869,images/00869.png,false pinhole; decision REWORK->REJECT,stain,"pinhole,stain"
+890,images/00890.png,false dirt,"hole,tear","dirt,hole,tear"

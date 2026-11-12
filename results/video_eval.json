@@ -1,0 +1,261 @@
+{
+ "video": "data\\videos\\demo.mp4",
+ "frames": 817,
+ "gloves_gt": 12,
+ "gloves_counted": 12,
+ "processing_fps": 5.1,
+ "type_correct": 12,
+ "hand_correct": 12,
+ "direction_correct": 12,
+ "defect_set_exact": 12,
+ "decision_correct": 12,
+ "mean_frames_per_glove": 8.0,
+ "gloves": [
+  {
+   "id": 0,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "garden",
+   "type": "garden",
+   "gt_defects": [],
+   "defects": [],
+   "gt_decision": "PASS",
+   "decision": "PASS",
+   "frames": 8,
+   "length_err": 0.75,
+   "width_err": 0.37
+  },
+  {
+   "id": 1,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "garden",
+   "type": "garden",
+   "gt_defects": [],
+   "defects": [],
+   "gt_decision": "PASS",
+   "decision": "PASS",
+   "frames": 8,
+   "length_err": 1.5,
+   "width_err": 0.76
+  },
+  {
+   "id": 2,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "longcuff",
+   "type": "longcuff",
+   "gt_defects": [
+    "fused_fingers"
+   ],
+   "defects": [
+    "fused_fingers"
+   ],
+   "gt_decision": "REJECT",
+   "decision": "REJECT",
+   "frames": 8,
+   "length_err": 0.5,
+   "width_err": -0.08
+  },
+  {
+   "id": 3,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "garden",
+   "type": "garden",
+   "gt_defects": [
+    "dirt"
+   ],
+   "defects": [
+    "dirt"
+   ],
+   "gt_decision": "REWORK",
+   "decision": "REWORK",
+   "frames": 8,
+   "length_err": 1.25,
+   "width_err": 0.86
+  },
+  {
+   "id": 4,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "longcuff",
+   "type": "longcuff",
+   "gt_defects": [
+    "tear"
+   ],
+   "defects": [
+    "tear"
+   ],
+   "gt_decision": "REJECT",
+   "decision": "REJECT",
+   "frames": 8,
+   "length_err": -0.05,
+   "width_err": -0.32
+  },
+  {
+   "id": 5,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "exam",
+   "type": "exam",
+   "gt_defects": [
+    "dirt"
+   ],
+   "defects": [
+    "dirt"
+   ],
+   "gt_decision": "REWORK",
+   "decision": "REWORK",
+   "frames": 8,
+   "length_err": 0.5,
+   "width_err": 0.48
+  },
+  {
+   "id": 6,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "garden",
+   "type": "garden",
+   "gt_defects": [],
+   "defects": [],
+   "gt_decision": "PASS",
+   "decision": "PASS",
+   "frames": 8,
+   "length_err": 1.0,
+   "width_err": 0.9
+  },
+  {
+   "id": 7,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "garden",
+   "type": "garden",
+   "gt_defects": [
+    "hole"
+   ],
+   "defects": [
+    "hole"
+   ],
+   "gt_decision": "REJECT",
+   "decision": "REJECT",
+   "frames": 8,
+   "length_err": -0.5,
+   "width_err": -0.57
+  },
+  {
+   "id": 8,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "exam",
+   "type": "exam",
+   "gt_defects": [
+    "pinhole",
+    "tear"
+   ],
+   "defects": [
+    "pinhole",
+    "tear"
+   ],
+   "gt_decision": "REJECT",
+   "decision": "REJECT",
+   "frames": 8,
+   "length_err": 1.25,
+   "width_err": 0.82
+  },
+  {
+   "id": 9,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "garden",
+   "type": "garden",
+   "gt_defects": [],
+   "defects": [],
+   "gt_decision": "PASS",
+   "decision": "PASS",
+   "frames": 8,
+   "length_err": 0.75,
+   "width_err": 0.04
+  },
+  {
+   "id": 10,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "garden",
+   "type": "garden",
+   "gt_defects": [
+    "missing_finger"
+   ],
+   "defects": [
+    "missing_finger"
+   ],
+   "gt_decision": "REJECT",
+   "decision": "REJECT",
+   "frames": 8,
+   "length_err": 1.0,
+   "width_err": 0.34
+  },
+  {
+   "id": 11,
+   "found": true,
+   "type_ok": true,
+   "hand_ok": true,
+   "dir_ok": true,
+   "defects_ok": true,
+   "dec_ok": true,
+   "gt_type": "longcuff",
+   "type": "longcuff",
+   "gt_defects": [],
+   "defects": [],
+   "gt_decision": "PASS",
+   "decision": "PASS",
+   "frames": 8,
+   "length_err": 0.7,
+   "width_err": 0.56
+  }
+ ]
+}

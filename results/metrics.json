@@ -1,0 +1,253 @@
+{
+ "dataset": "data\\test",
+ "n_gloves": 900,
+ "n_found": 900,
+ "type_accuracy": 0.9988888888888889,
+ "hand_accuracy": 0.9766666666666667,
+ "hand_unknown_rate": 0.017777777777777778,
+ "direction_accuracy": 1.0,
+ "decision_accuracy": 0.9511111111111111,
+ "defective_glove_detection": {
+  "recall": 0.9752650176678446,
+  "false_alarm_rate": 0.02694610778443114
+ },
+ "length_error_mm": {
+  "mae": 0.7975,
+  "p95": 1.25,
+  "bias": 0.49916666666666665
+ },
+ "width_error_mm": {
+  "mae": 0.7071666666666666,
+  "p95": 1.0910000000000024,
+  "bias": 0.6256999999999996
+ },
+ "time_ms_per_image": {
+  "mean": 513.1436621110536,
+  "p95": 816.6813599990742
+ },
+ "defects": {
+  "hole": {
+   "n_gt": 85,
+   "tp": 81,
+   "fp": 6,
+   "fn": 4,
+   "precision": 0.9310344827586207,
+   "recall": 0.9529411764705882,
+   "f1": 0.941860465116279
+  },
+  "pinhole": {
+   "n_gt": 82,
+   "tp": 73,
+   "fp": 19,
+   "fn": 9,
+   "precision": 0.7934782608695652,
+   "recall": 0.8902439024390244,
+   "f1": 0.8390804597701148
+  },
+  "tear": {
+   "n_gt": 68,
+   "tp": 60,
+   "fp": 5,
+   "fn": 8,
+   "precision": 0.9230769230769231,
+   "recall": 0.8823529411764706,
+   "f1": 0.9022556390977443
+  },
+  "missing_finger": {
+   "n_gt": 88,
+   "tp": 72,
+   "fp": 33,
+   "fn": 16,
+   "precision": 0.6857142857142857,
+   "recall": 0.8181818181818182,
+   "f1": 0.7461139896373058
+  },
+  "fused_fingers": {
+   "n_gt": 88,
+   "tp": 88,
+   "fp": 28,
+   "fn": 0,
+   "precision": 0.7586206896551724,
+   "recall": 1.0,
+   "f1": 0.8627450980392156
+  },
+  "stain": {
+   "n_gt": 90,
+   "tp": 87,
+   "fp": 8,
+   "fn": 3,
+   "precision": 0.9157894736842105,
+   "recall": 0.9666666666666667,
+   "f1": 0.9405405405405406
+  },
+  "dirt": {
+   "n_gt": 167,
+   "tp": 138,
+   "fp": 4,
+   "fn": 29,
+   "precision": 0.971830985915493,
+   "recall": 0.8263473053892215,
+   "f1": 0.8932038834951456
+  },
+  "cuff_defect": {
+   "n_gt": 75,
+   "tp": 73,
+   "fp": 21,
+   "fn": 2,
+   "precision": 0.776595744680851,
+   "recall": 0.9733333333333334,
+   "f1": 0.8639053254437871
+  },
+  "out_of_tolerance": {
+   "n_gt": 80,
+   "tp": 80,
+   "fp": 10,
+   "fn": 0,
+   "precision": 0.8888888888888888,
+   "recall": 1.0,
+   "f1": 0.9411764705882353
+  }
+ },
+ "measurement_error_mm": {
+  "stain": {
+   "n": 87,
+   "mae": 1.0365866592687258,
+   "bias": 0.31184474163958215,
+   "p95": 2.336717974254942
+  },
+  "tear": {
+   "n": 60,
+   "mae": 4.157166666666666,
+   "bias": -4.157166666666666,
+   "p95": 7.043999999999999
+  },
+  "hole": {
+   "n": 81,
+   "mae": 0.2880934652150052,
+   "bias": -0.22295777218421922,
+   "p95": 0.446764858541739
+  },
+  "cuff_defect": {
+   "n": 73,
+   "mae": 0.6634933261737654,
+   "bias": -0.2086416843915765,
+   "p95": 1.7193181512526867
+  },
+  "missing_finger": {
+   "n": 72,
+   "mae": 2.0588506159418367,
+   "bias": 0.13485410004635753,
+   "p95": 9.143631468121429
+  },
+  "dirt": {
+   "n": 138,
+   "mae": 0.38439919918949345,
+   "bias": 0.32762967029334034,
+   "p95": 0.8747939223757775
+  },
+  "pinhole": {
+   "n": 73,
+   "mae": 0.2807050248388021,
+   "bias": 0.24049066526550716,
+   "p95": 0.6679636176818834
+  }
+ },
+ "per_lighting": {
+  "nominal": {
+   "n": 180,
+   "type_accuracy": 1.0,
+   "hand_accuracy": 0.9777777777777777,
+   "decision_accuracy": 0.9888888888888889,
+   "defect_precision": 0.9130434782608695,
+   "defect_recall": 0.9735099337748344,
+   "length_mae_mm": 0.5138888888888888
+  },
+  "dim": {
+   "n": 180,
+   "type_accuracy": 1.0,
+   "hand_accuracy": 0.9888888888888889,
+   "decision_accuracy": 0.9777777777777777,
+   "defect_precision": 0.893491124260355,
+   "defect_recall": 0.94375,
+   "length_mae_mm": 0.575
+  },
+  "bright": {
+   "n": 180,
+   "type_accuracy": 1.0,
+   "hand_accuracy": 0.9833333333333333,
+   "decision_accuracy": 0.9611111111111111,
+   "defect_precision": 0.9397590361445783,
+   "defect_recall": 0.9341317365269461,
+   "length_mae_mm": 0.5777777777777777
+  },
+  "warm_gradient": {
+   "n": 180,
+   "type_accuracy": 1.0,
+   "hand_accuracy": 0.9722222222222222,
+   "decision_accuracy": 0.9777777777777777,
+   "defect_precision": 0.8852459016393442,
+   "defect_recall": 0.9364161849710982,
+   "length_mae_mm": 0.6208333333333333
+  },
+  "shadow_noise": {
+   "n": 180,
+   "type_accuracy": 0.9944444444444445,
+   "hand_accuracy": 0.9611111111111111,
+   "decision_accuracy": 0.85,
+   "defect_precision": 0.6570048309178744,
+   "defect_recall": 0.7906976744186046,
+   "length_mae_mm": 1.7
+  }
+ },
+ "type_confusion": {
+  "exam->exam": 300,
+  "longcuff->longcuff": 299,
+  "garden->garden": 300,
+  "longcuff->garden": 1
+ },
+ "decision_confusion": {
+  "PASS->PASS": 325,
+  "REWORK->REWORK": 126,
+  "REJECT->REJECT": 405,
+  "REWORK->REJECT": 17,
+  "REJECT->PASS": 10,
+  "PASS->REJECT": 9,
+  "REWORK->PASS": 4,
+  "REJECT->REWORK": 4
+ },
+ "defect_confusion": {
+  "out_of_tolerance->out_of_tolerance": 80,
+  "fused_fingers->fused_fingers": 88,
+  "stain->stain": 87,
+  "tear->tear": 60,
+  "hole->hole": 81,
+  "cuff_defect->cuff_defect": 73,
+  "missing_finger->missed": 15,
+  "cuff_defect->missed": 2,
+  "missing_finger->missing_finger": 72,
+  "dirt->dirt": 138,
+  "pinhole->pinhole": 73,
+  "hole->pinhole": 1,
+  "tear->missed": 8,
+  "stain->hole": 3,
+  "dirt->missed": 27,
+  "pinhole->hole": 1,
+  "hole->stain": 2,
+  "pinhole->stain": 1,
+  "dirt->pinhole": 2,
+  "missing_finger->fused_fingers": 1,
+  "pinhole->missed": 7,
+  "hole->missed": 1
+ },
+ "false_alarms": {
+  "cuff_defect": 21,
+  "missing_finger": 33,
+  "fused_fingers": 27,
+  "out_of_tolerance": 10,
+  "pinhole": 16,
+  "dirt": 4,
+  "stain": 5,
+  "tear": 5,
+  "hole": 2
+ }
+}
